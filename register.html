@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>REGISTER FORM</h1>
+        <form enctype="multipart/form-data" action="result.html" autocomplete="on">
+            <label class="form-group">
+                Name:
+                <input type="text" name="fname" placeholder="No symbols" required>
+            </label>
+            <label class="form-group">
+                Mobile:
+                <input type="number" name="number" placeholder="Enter the number" required>
+            </label>
+            <label class="form-group">
+                Email:
+                <input type="email" name="email" placeholder="Enter the email" required>
+            </label>
+            <label class="form-group">
+                Password:
+                <input type="password" name="PASSWORD" placeholder="Enter the password" required>
+            </label>
+            <label class="form-group">
+                Gender:
+                <div class="gender-options">
+                    <label><input type="radio" name="gender"> Male</label>
+                    <label><input type="radio" name="gender"> Female</label>
+                    <label><input type="radio" name="gender"> Other</label>
+                </div>
+            </label>
+            <label class="form-group">
+                Address:
+                <textarea placeholder="Enter your address" minlength="20" required></textarea>
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
